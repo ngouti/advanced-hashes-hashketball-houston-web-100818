@@ -125,10 +125,12 @@ def num_points_scored(name)
     team[:players].each do |pname, stats|
       if pname == name
            return stats[:points]
+           
       end
     end
   end
 end
+binding.pry
   
  # name.capitalize!
  # if game_hash[:home][:players].include?(name)
